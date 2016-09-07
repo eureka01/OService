@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oservice</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/listagem.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">OService</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>         
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav><br>
+
+        <div class="container">
+
+            <!-- Main component for a primary marketing message or call to action -->
+            <div class="jumbotron">
+
+
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Abrir Chamado</legend>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="loja">Loja</label>
+                            <div class="col-md-4">
+                                <select id="loja" name="loja" class="form-control">
+                                    <option value="1">LOJA 1</option>
+                                    <option value="2">LOJA 2</option>
+                                    <option value="3">LOJA 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="solicitante">Solicitante</label>  
+                            <div class="col-md-4">
+                                <input id="solicitante" name="solicitante" type="text" placeholder="" class="form-control input-md" required="">
+
+                            </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="solicitacao">Solitação</label>
+                            <div class="col-md-4">                     
+                                <textarea class="form-control" id="solicitacao" name="solicitacao"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- File Button --> 
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="upload">Selecionar Arquivos</label>
+                            <div class="col-md-4">
+                                <input id="upload" name="upload" class="input-file" type="file">
+                            </div>
+                        </div>
+
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="enviar"></label>
+                            <div class="col-md-8">
+                                <button id="enviar" name="enviar" class="btn btn-success">Enviar</button>
+                                <button id="limpar" name="limpar" class="btn btn-danger">Limpar</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+        </div> <!-- /container -->
+
+    </body>
+</html>
